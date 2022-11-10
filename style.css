@@ -50,6 +50,25 @@ main img {
   flex: 2;
 }
 
+.change-image-size {
+  width: 100%;
+  margin: 7px 1px;
+}
+
+.item2{
+  margin: 10px 4px;
+}
+
+.item3 {
+  margin: 15px 14px
+}
+
+.group3 {
+  margin: 10px
+}
+
+
+
 /* -------  Navigation ------- */
 
 header {
@@ -62,6 +81,16 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
 }
 
 header nav ul li {
@@ -83,6 +112,13 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 form label {
@@ -117,3 +153,104 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    background-color: #ff385c;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 32px;
+    color: #fff;
+    padding: 5px 0 0 0;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+  
+  form label {
+    font-weight: bold;
+    display: flex;
+  }
+  
+  form select,
+  form input {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .group1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .item1 {
+    flex: 1;
+    margin: 0 10px 0 0;
+  }
+
+  .item2 {
+    flex: 2;
+    align-self: center;
+    margin: 5px 23px;
+  }
+  
+  .group2 {
+    display: flex;
+    flex-direction: row;  
+  }
+
+  .item3 {
+    flex: 1;
+    margin: 5px;
+  }
+
+  .item4 {
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .item5 {
+    flex: 1;
+  }
+  
+  .group3 {
+    display: flex;
+    flex-direction: row; 
+  }  
+}
